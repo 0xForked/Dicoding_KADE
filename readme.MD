@@ -2,7 +2,7 @@
 
 </br>
 <p align="center">
-   <img src="https://github.com/aasumitro/dicoding_KADE_submission01/blob/master/assets/dicoding_kotlin_submission01.gif" width="250">
+   <img src="https://github.com/aasumitro/dicoding_KADE_submission01/blob/master/assests/dicoding_kotlin_submission01.gif" width="250">
 </p>
 </br>
 
