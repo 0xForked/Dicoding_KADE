@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">submission001</string>
+    <string name="bbc_news">BBC NEWS</string>
+    <string name="item_source">item_source</string>
+    <string name="item_published">item_published</string>
+    <string name="item_title">item_title</string>
+</resources>

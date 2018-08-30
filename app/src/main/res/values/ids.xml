@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_frame" type="id">main_frame</item>
+    <item name="fr_main_text" type="id">fr_main_text</item>
+    <item name="card_item" type="id">card_item</item>
+    <item name="card_item_click" type="id">card_item_click</item>
+    <item name="card_item_image" type="id">card_item_image</item>
+    <item name="card_item_text_title" type="id">card_item_text_title</item>
+    <item name="card_item_text_source" type="id">card_item_text_source</item>
+    <item name="card_item_text_author" type="id">card_item_text_author</item>
+    <item name="card_item_text_published" type="id">card_item_text_published</item>
+    <item name="main_swipe_refresh" type="id">main_swipe_refresh</item>
+    <item name="main_recycler_view" type="id">main_recycler_view</item>
+    <item name="detail_main_layout" type="id">detail_main_layout</item>
+    <item name="detail_text_title" type="id">detail_text_title</item>
+    <item name="detail_text_subtitle" type="id">detail_text_subtitle</item>
+    <item name="detail_image_view" type="id">detail_image_view</item>
+    <item name="detail_text_description" type="id">detail_text_description</item>
+</resources>
