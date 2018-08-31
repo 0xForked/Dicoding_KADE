@@ -78,15 +78,7 @@ class FragmentMain : Fragment(), AnkoLogger, FMNavigator, FMListener {
     }
 
     override fun onItemPressed(result: ResultData) {
-        val author: String = result.author ?: SOURCE_KEY
-        startActivity<DetailActivity>(
-                "author" to author,
-                "title" to result.title,
-                "desc" to result.description,
-                "url" to result.url,
-                "urlToImage" to result.urlToImage,
-                "publishedAt" to result.publishedAt)
-
+        startActivity<DetailActivity>("NEWS" to result )
     }
 
     override fun onPause() {

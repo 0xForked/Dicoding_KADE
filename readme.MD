@@ -14,5 +14,4 @@
   - [Retrofit](https://github.com/square/retrofit)
   - [okHttp](https://github.com/square/okhttp)
   - [Anko](https://github.com/Kotlin/anko)
-  - [gif-drawable](https://github.com/koral--/android-gif-drawable)
-  
+

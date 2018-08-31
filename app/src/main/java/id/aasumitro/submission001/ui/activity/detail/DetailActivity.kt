@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import com.squareup.picasso.MemoryPolicy
 import com.squareup.picasso.Picasso
 import id.aasumitro.submission001.R
+import id.aasumitro.submission001.data.model.ResultData
 import id.aasumitro.submission001.util.AppConst
 import id.aasumitro.submission001.util.BitmapTransform
 import id.aasumitro.submission001.util.dateHelper
@@ -22,14 +23,14 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun dataSetter() {
-        val title = intent.getStringExtra("title")
-        val description = intent.getStringExtra("desc")
-        val urlToImage = intent.getStringExtra("urlToImage")
-        val published = intent.getStringExtra("publishedAt")
+        val news = intent.getParcelableExtra<ResultData>("NEWS")
+        val published = news.publishedAt
         val subtitle = getString(R.string.bbc_news) + " - " + dateHelper(published)
-        maUI.mTitle.text = title
+        val urlToImage = news.urlToImage
+
+        maUI.mTitle.text = news.title
         maUI.mSubtitle.text = subtitle
-        maUI.mDescription.text = description
+        maUI.mDescription.text = news.description
         getFeaturedImage(urlToImage)
     }
 
