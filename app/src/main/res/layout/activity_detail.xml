@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.aasumitro.submission002.ui.detail.DetailActivity">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/next_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/next_match_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <include
+        android:id="@+id/layout_error_detail"
+        android:visibility="gone"
+        layout="@layout/item_error_layout" />
+    <RelativeLayout
+        android:id="@+id/layout_loading_detail"
+        style="@style/WrapContent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/item_loading" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/detail_swipeRefreshLayout">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:padding="@dimen/twenty_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/detail_home_intro"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="@dimen/seventy_five_dp"
+                        android:layout_height="@dimen/seventy_five_dp"
+                        android:id="@+id/detail_team_home_bandage"
+                        android:contentDescription="@null" />
+                    <TextView
+                        style="@style/Text.Item.Match"
+                        android:textSize="@dimen/fifteen_sp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:id="@+id/detail_team_home_name" />
+                    <TextView
+                        android:id="@+id/detail_team_home_formation"
+                        style="@style/Text.Item.Match"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:textSize="@dimen/fifteen_sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        style="@style/Text.Item.Match"
+                        android:textSize="@dimen/fifteen_sp"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/detail_match_date_time" />
+                    <TextView
+                        style="@style/Text.Item.Match"
+                        android:textSize="@dimen/fifteen_sp"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/detail_match_stadium" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp">
+                        <TextView
+                            style="@style/Text.Main.Title"
+                            android:textSize="@dimen/thirty_sp"
+                            android:id="@+id/detail_team_home_score"/>
+                        <TextView
+                            style="@style/Text.Main.Title"
+                            android:layout_marginStart="@dimen/ten_dp"
+                            android:layout_marginEnd="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_sp"
+                            android:id="@+id/detail_match_status"
+                            android:text="@string/vs"/>
+                        <TextView
+                            android:id="@+id/detail_team_away_score"
+                            style="@style/Text.Main.Title"
+                            android:textSize="@dimen/thirty_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/detail_away_intro"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="@dimen/seventy_five_dp"
+                        android:layout_height="@dimen/seventy_five_dp"
+                        android:id="@+id/detail_team_away_bandage"
+                        android:contentDescription="@null" />
+                    <TextView
+                        android:id="@+id/detail_team_away_name"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:textSize="@dimen/fifteen_sp"
+                        style="@style/Text.Item.Match" />
+                    <TextView
+                        android:id="@+id/detail_team_away_formation"
+                        style="@style/Text.Item.Match"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:textSize="@dimen/fifteen_sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/div_header_goals"
+                    android:layout_below="@+id/detail_home_intro"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_height="1dip"
+                    android:background="#c2c1c1" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_goals"
+                    android:layout_below="@id/div_header_goals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_team_home_scorer"
+                        android:layout_alignParentStart="true"
+                        style="@style/Text.Item.Match"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:textSize="@dimen/fifteen_sp" />
+                    <TextView
+                        android:id="@+id/goals_text"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Goal"
+                        android:textStyle="bold"
+                        style="@style/Text.Item.Match"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:textSize="@dimen/fifteen_sp" />
+                    <TextView
+                        android:id="@+id/detail_team_away_scorer"
+                        android:layout_alignParentEnd="true"
+                        style="@style/Text.Item.Match"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:textSize="@dimen/fifteen_sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div_goals_lineups"
+                    android:layout_below="@+id/layout_goals"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_height="1dip"
+                    android:background="#c2c1c1" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_lineup"
+                    android:layout_below="@id/div_goals_lineups"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lineup_title"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Lineup"
+                        android:textStyle="bold"
+                        style="@style/Text.Item.Match"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:textSize="@dimen/fifteen_sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_goalkeeper"
+                        android:layout_below="@id/lineup_title"
+                        android:padding="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/lineup_goalkeeper"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/goalkeeper"
+                            style="@style/Text.Item.Match"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_home_goalkeeper"
+                            android:layout_below="@id/lineup_goalkeeper"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentStart="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_away_goalkeeper"
+                            android:layout_below="@id/lineup_goalkeeper"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_defense"
+                        android:layout_below="@id/layout_goalkeeper"
+                        android:padding="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/lineup_defense"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/defense"
+                            style="@style/Text.Item.Match"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_home_defense"
+                            android:layout_below="@id/lineup_defense"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentStart="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_away_defense"
+                            android:layout_below="@id/lineup_defense"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_midfield"
+                        android:layout_below="@id/layout_defense"
+                        android:padding="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/lineup_midfield"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/midfield"
+                            style="@style/Text.Item.Match"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_home_midfield"
+                            android:layout_below="@id/lineup_midfield"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentStart="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_away_midfield"
+                            android:layout_below="@id/lineup_midfield"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_forward"
+                        android:layout_below="@id/layout_midfield"
+                        android:padding="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/lineup_forward"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/forward"
+                            style="@style/Text.Item.Match"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_home_forward"
+                            android:layout_below="@id/lineup_forward"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentStart="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_away_forward"
+                            android:layout_below="@id/lineup_forward"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_substitutes"
+                        android:layout_below="@id/layout_forward"
+                        android:padding="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/lineup_substitutes"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/substitutes"
+                            style="@style/Text.Item.Match"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_home_substitutes"
+                            android:layout_below="@id/lineup_substitutes"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentStart="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                        <TextView
+                            android:id="@+id/detail_team_away_substitutes"
+                            android:layout_below="@id/lineup_substitutes"
+                            style="@style/Text.Item.Match"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="@dimen/fifteen_sp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.constraint.ConstraintLayout>

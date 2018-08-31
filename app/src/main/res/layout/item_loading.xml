@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.droidsonroids.gif.GifImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Image.Loading"
+    android:id="@+id/image_main_list_loading"
+    android:src="@drawable/loading" />
