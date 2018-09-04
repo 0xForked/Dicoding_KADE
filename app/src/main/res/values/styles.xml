@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Text.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text.Black" parent="WrapContent">
+        <item name="android:textColor">@color/black_effective</item>
+    </style>
+
+    <style name="Text.Accent" parent="WrapContent">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Text.Splash.Title" parent="Text.Black">
+        <item name="android:textSize">@dimen/fifty_sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Splash.Subtitle" parent="Text.Accent">
+        <item name="android:textSize">@dimen/thirty_sp</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="Text.Main.Title" parent="Text.Black">
+        <item name="android:textSize">@dimen/twenty_sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Main.Subtitle" parent="Text.Accent">
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="Text.Item.Match" parent="Text.Medium">
+        <item name="android:textSize">@dimen/twenty_sp</item>
+    </style>
+
+
+    <style name="Text.Item.Detail" parent="Text.Medium">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Text.Item.Detail.Title" parent="Text.Medium">
+        <item name="android:layout_margin">@dimen/eight_dp</item>
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:textSize">@dimen/fifteen_sp</item>
+    </style>
+
+    <style name="Image.Loading" parent="WrapContent">
+        <item name="android:layout_height">@dimen/fifty_dp</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!--<style name="Image.Card" parent="WrapContent">-->
+        <!--<item name="android:layout_height">@dimen/sixty_dp</item>-->
+        <!--<item name="android:width">@dimen/sixty_dp</item>-->
+        <!--<item name="android:src">@drawable/ic_today_black</item>-->
+    <!--</style>-->
+
+    <style name="Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/semi_gray</item>
+    </style>
+
+    <style name="Layout.Click" parent="MatchParent">
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+</resources>
