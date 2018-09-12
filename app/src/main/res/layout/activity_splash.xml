@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.intro.SplashActivity">
+
+    <TextView
+        android:id="@+id/act_splash_txt_title"
+        style="@style/Text.Splash.Title"
+        android:text="@string/app_name_real_second"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/act_splash_txt_subtitle"
+        style="@style/Text.Splash.Subtitle"
+        android:text="@string/app_name_real_first"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/act_splash_txt_title"
+        app:layout_constraintEnd_toEndOf="@+id/act_splash_txt_title"
+        app:layout_constraintStart_toStartOf="@+id/act_splash_txt_title" />
+
+    <RelativeLayout
+        android:id="@+id/act_splash_loading_layout"
+        style="@style/WrapContent"
+        android:layout_marginBottom="@dimen/sixty_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <include layout="@layout/item_loading_layout" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/act_splash_txt_loading_status"
+        style="@style/Text.Main.Subtitle"
+        android:text="@string/loading_status"
+        android:visibility="gone"
+        android:textColor="@color/black_effective"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act_splash_loading_layout" />
+
+</android.support.constraint.ConstraintLayout>

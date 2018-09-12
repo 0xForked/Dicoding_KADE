@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">final submission</string>
+    <string name="app_name_real">real football</string>
+    <string name="app_name_real_capital">Real Football</string>
+    <string name="app_name_real_first">real</string>
+    <string name="app_name_real_second">football</string>
+    <string name="item_title">item_title</string>
+    <string name="item_subtitle">item_subtitle</string>
+    <string name="error_message">error_message</string>
+    <string name="error_code">error_code</string>
+    <string name="title_home">Home</string>
+    <string name="title_away">Away</string>
+    <string name="title_event">Events</string>
+    <string name="title_team">Teams</string>
+    <string name="title_favorite">Favorites</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_prev_match">Last Match</string>
+    <string name="title_next_match">Next Match</string>
+    <string name="title_favorite_match">Favorite Match</string>
+    <string name="title_epl">(EPL)</string>
+    <string name="colon">:</string>
+    <string name="dash">-</string>
+    <string name="team_name">team_name</string>
+    <string name="match_status">FT</string>
+    <string name="vs">VS</string>
+    <string name="match_date">--/--/----</string>
+    <string name="match_time">-:-</string>
+    <string name="match_detail">Match Detail</string>
+    <string name="loading_status">loading_status</string>
+    <string name="team_position">team_position</string>
+    <string name="Goal">Goals</string>
+    <string name="Lineup">Lineups</string>
+    <string name="next_match_info">Match detail will available soon!</string>
+    <string name="goalkeeper">goalkeeper</string>
+    <string name="defense">defense</string>
+    <string name="midfield">midfield</string>
+    <string name="forward">forward</string>
+    <string name="substitutes">substitutes</string>
+    <string name="prediction">
+        Prediction data not available \n
+        mark this match as favorite \n
+        for get the latest news.
+    </string>
+    <string name="TEAM">TEAM</string>
+    <string name="formation_g">Formation *guess</string>
+    <string name="cant_get_prediction">Failed get prediction data, love this match to get latest data!</string>
+    <string name="title_activity_team_details">TeamDetailsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="height_m">Height (m)</string>
+    <string name="title_search">search</string>
+    <string name="more">more</string>
+    <string name="setting">setting</string>
+    <string name="about">about</string>
+    <string name="txt_favorite_team">Favorite Team</string>
+    <string name="txt_favorite_match_title">Favorite Match</string>
+    <string name="favorite_match">Favorite Match</string>
+    <string name="favorite_team">Favorite Team</string>
+</resources>

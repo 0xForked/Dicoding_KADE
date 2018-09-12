@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/item_detail_img_home_bandage"
+            android:layout_width="@dimen/seventy_five_dp"
+            android:layout_height="@dimen/seventy_five_dp"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/item_detail_txt_home_name"
+            style="@style/Text.Item.Match"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_marginTop="@dimen/five_dp" />
+        <TextView
+            android:id="@+id/item_detail_txt_home_formation"
+            style="@style/Text.Item.Match"
+            android:layout_marginTop="@dimen/five_dp"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+        <TextView
+            style="@style/Text.Item.Match"
+            android:textSize="@dimen/fifteen_sp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/item_detail_txt_match_date_time" />
+        <TextView
+            style="@style/Text.Item.Match"
+            android:textSize="@dimen/fifteen_sp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/item_detail_txt_match_stadium" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp">
+            <TextView
+                android:id="@+id/item_detail_txt_home_score"
+                style="@style/Text.Main.Title"
+                android:textSize="@dimen/thirty_sp"/>
+            <TextView
+                android:id="@+id/item_detail_txt_match_status"
+                style="@style/Text.Main.Title"
+                android:layout_marginStart="@dimen/ten_dp"
+                android:layout_marginEnd="@dimen/ten_dp"
+                android:textSize="@dimen/twenty_sp"
+                android:text="@string/vs"/>
+            <TextView
+                android:id="@+id/item_detail_txt_away_score"
+                style="@style/Text.Main.Title"
+                android:textSize="@dimen/thirty_sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/item_detail_img_away_bandage"
+            android:layout_width="@dimen/seventy_five_dp"
+            android:layout_height="@dimen/seventy_five_dp"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/item_detail_txt_away_name"
+            android:layout_marginTop="@dimen/five_dp"
+            android:textSize="@dimen/fifteen_sp"
+            style="@style/Text.Item.Match" />
+        <TextView
+            android:id="@+id/item_detail_txt_away_formation"
+            style="@style/Text.Item.Match"
+            android:layout_marginTop="@dimen/five_dp"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+</RelativeLayout>

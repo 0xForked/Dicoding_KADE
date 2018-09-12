@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item_rv_player_lay_click"
+    style="@style/Layout.Click"
+    android:layout_height="60dp">
+    <ImageView
+        android:id="@+id/item_rv_player_cutout"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/five_dp"
+        android:layout_width="@dimen/fifty_dp"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@null" />
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/item_rv_player_cutout"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/Text.Main.Title"
+            android:id="@+id/item_rv_player_name"/>
+        <TextView
+            style="@style/Text.Main.Subtitle"
+            android:id="@+id/item_rv_player_lineup" />
+    </LinearLayout>
+</RelativeLayout>

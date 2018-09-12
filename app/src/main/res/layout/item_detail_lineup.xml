@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_detail_txt_lineup_title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Lineup"
+        android:textStyle="bold"
+        style="@style/Text.Item.Detail.Title" />
+
+    <LinearLayout
+        android:id="@+id/item_detail_goalkeeper_layout"
+        android:layout_below="@id/item_detail_txt_lineup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_detail_txt_home_goalkeeper"
+            style="@style/Text.Item.Detail"
+            android:textSize="@dimen/fifteen_sp" />
+        <TextView
+            android:id="@+id/item_detail_txt_goalkeeper_title"
+            android:text="@string/goalkeeper"
+            style="@style/Text.Item.Detail.Title" />
+        <TextView
+            android:id="@+id/item_detail_txt_away_goalkeeper"
+            style="@style/Text.Item.Detail"
+            android:gravity="end"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_detail_defense_layout"
+        android:layout_below="@id/item_detail_goalkeeper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_detail_txt_home_defense"
+            style="@style/Text.Item.Detail"
+            android:textSize="@dimen/fifteen_sp" />
+        <TextView
+            android:id="@+id/item_detail_txt_defense_title"
+            android:text="@string/defense"
+            style="@style/Text.Item.Detail.Title" />
+        <TextView
+            android:id="@+id/item_detail_txt_away_defense"
+            style="@style/Text.Item.Detail"
+            android:gravity="end"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_detail_midfield_layout"
+        android:layout_below="@id/item_detail_defense_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_detail_txt_home_midfield"
+            style="@style/Text.Item.Detail"
+            android:textSize="@dimen/fifteen_sp" />
+        <TextView
+            android:id="@+id/item_detail_txt_midfield_title"
+            android:text="@string/midfield"
+            style="@style/Text.Item.Detail.Title" />
+        <TextView
+            android:id="@+id/item_detail_txt_away_midfield"
+            style="@style/Text.Item.Detail"
+            android:gravity="end"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_detail_forward_layout"
+        android:layout_below="@id/item_detail_midfield_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_detail_txt_home_forward"
+            style="@style/Text.Item.Detail"
+            android:textSize="@dimen/fifteen_sp" />
+        <TextView
+            android:id="@+id/item_detail_txt_forward_title"
+            android:text="@string/forward"
+            style="@style/Text.Item.Detail.Title" />
+        <TextView
+            android:id="@+id/item_detail_txt_away_forward"
+            style="@style/Text.Item.Detail"
+            android:gravity="end"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_detail_substitutes_layout"
+        android:layout_below="@id/item_detail_forward_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_detail_txt_home_substitutes"
+            style="@style/Text.Item.Detail"
+            android:textSize="@dimen/fifteen_sp" />
+        <TextView
+            android:id="@+id/item_detail_txt_substitutes_title"
+            android:text="@string/substitutes"
+            style="@style/Text.Item.Detail.Title" />
+        <TextView
+            android:id="@+id/item_detail_txt_away_substitutes"
+            style="@style/Text.Item.Detail"
+            android:gravity="end"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+
+</RelativeLayout>

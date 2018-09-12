@@ -1,0 +1,34 @@
+{
+  "leagues": [
+    {
+      "idLeague": "4328",
+      "strLeague": "English Premier League",
+      "strSport": "Soccer",
+      "strLeagueAlternate": "Premier League"
+    },
+    {
+      "idLeague": "4331",
+      "strLeague": "German Bundesliga",
+      "strSport": "Soccer",
+      "strLeagueAlternate": "Bundesliga"
+    },
+    {
+      "idLeague": "4332",
+      "strLeague": "Italian Serie A",
+      "strSport": "Soccer",
+      "strLeagueAlternate": "Serie A"
+    },
+    {
+      "idLeague": "4334",
+      "strLeague": "French Ligue 1",
+      "strSport": "Soccer",
+      "strLeagueAlternate": "Ligue 1"
+    },
+    {
+      "idLeague": "4335",
+      "strLeague": "Spanish La Liga",
+      "strSport": "Soccer",
+      "strLeagueAlternate": "La Liga"
+    }
+  ]
+}

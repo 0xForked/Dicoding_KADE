@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/one_hundred_thirty_dp"
+    android:layout_margin="@dimen/three_dp">
+    <RelativeLayout
+        android:id="@+id/item_rv_team_lay_click"
+        style="@style/Layout.Click"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/item_rv_team_bandage"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/five_dp"
+            android:layout_width="@dimen/seventy_five_dp"
+            android:layout_height="@dimen/seventy_five_dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/item_rv_team_name"
+            style="@style/Text.Item.Match"
+            android:layout_below="@id/item_rv_team_bandage"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/fifteen_sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

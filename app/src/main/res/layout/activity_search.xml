@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.aasumitro.finalsubmission.ui.activity.search.SearchActivity">
+    <RelativeLayout
+        android:id="@+id/act_search_loading_layout"
+        style="@style/WrapContent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/item_loading_layout" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/act_search_match_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/item_match_list"
+        app:reverseLayout="true"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/act_search_team_rv"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/item_team_list"
+        app:reverseLayout="true"/>
+</android.support.constraint.ConstraintLayout>

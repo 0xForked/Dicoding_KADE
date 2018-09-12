@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.aasumitro.finalsubmission">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:name=".RealFootball"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name_real_capital"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.intro.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.main.MainActivity" />
+        <activity android:name=".ui.activity.detail.match.MatchDetailActivity" />
+        <activity
+            android:name=".ui.activity.detail.team.TeamDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.dialog.player.PlayerDetailDialog"
+            android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"
+            tools:targetApi="lollipop"></activity>
+        <activity
+            android:name=".ui.dialog.setting.SettingDialog"
+            android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"
+            tools:targetApi="lollipop"></activity>
+        <activity android:name=".ui.activity.search.SearchActivity"></activity>
+    </application>
+
+</manifest>

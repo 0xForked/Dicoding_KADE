@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="1dp"
+    android:fillViewport="true">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/five_dp">
+        <RelativeLayout
+            android:id="@+id/player_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UselessParent">
+            <ImageView
+                android:id="@+id/dialog_player_cutout"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/five_dp"
+                android:contentDescription="@null" />
+            <LinearLayout
+                android:id="@+id/lay_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/dialog_player_cutout"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dialog_player_name"
+                    style="@style/Text.Main.Title" />
+                <TextView
+                    android:id="@+id/dialog_player_born"
+                    style="@style/Text.Main.Subtitle" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dialog_height_title"
+            style="@style/Text.Item.Detail"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/height_m"
+            android:textSize="@dimen/twenty_sp"
+            app:layout_constraintStart_toStartOf="@+id/player_header"
+            app:layout_constraintTop_toBottomOf="@+id/player_header" />
+        <TextView
+            android:id="@+id/dialog_height"
+            style="@style/Text.Item.Detail"
+            android:layout_below="@+id/dialog_height_title"
+            android:textSize="@dimen/twenty_sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/dialog_height_title"
+            app:layout_constraintStart_toStartOf="@+id/dialog_height_title"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_height_title" />
+        <TextView
+            android:id="@+id/dialog_weight_title"
+            style="@style/Text.Item.Detail"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/weight_kg"
+            android:textSize="@dimen/twenty_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player_header" />
+        <TextView
+            android:id="@+id/dialog_weight"
+            style="@style/Text.Item.Detail"
+            android:textSize="@dimen/twenty_sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/dialog_weight_title"
+            app:layout_constraintStart_toStartOf="@+id/dialog_weight_title"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_weight_title" />
+        <TextView
+            android:id="@+id/dialog_description"
+            style="@style/Text.Item.Detail"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/eighteen_sp"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_height" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
