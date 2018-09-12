@@ -8,14 +8,14 @@
 
 ### Library
 
-  - [Arch Comp] (https://developer.android.com/jetpack/#architecture-components)
+  - [Arch Comp](https://developer.android.com/jetpack/#architecture-components)
   - [RxJava](https://github.com/ReactiveX/Rxjava)
   - [RxAndroid](https://github.com/ReactiveX/RxAndroid)
   - [Picasso](https://github.com/square/picasso)
   - [Retrofit](https://github.com/square/retrofit)
   - [okHttp](https://github.com/square/okhttp)
   - [Anko](https://github.com/Kotlin/anko)
-  - [Gif Drawable] (https://github.com/koral--/android-gif-drawable)
-  - [Mockito] (https://github.com/mockito/mockito)
-  - [espresso] (https://developer.android.com/training/testing/ui-testing/espresso-testing#kotlin)
+  - [Gif Drawable](https://github.com/koral--/android-gif-drawable)
+  - [Mockito](https://github.com/mockito/mockito)
+  - [espresso](https://developer.android.com/training/testing/ui-testing/espresso-testing#kotlin)
 
