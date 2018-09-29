@@ -33,12 +33,13 @@
         <activity
             android:name=".ui.dialog.player.PlayerDetailDialog"
             android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"
-            tools:targetApi="lollipop"></activity>
+            tools:targetApi="lollipop" />
         <activity
             android:name=".ui.dialog.setting.SettingDialog"
             android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"
-            tools:targetApi="lollipop"></activity>
-        <activity android:name=".ui.activity.search.SearchActivity"></activity>
+            tools:targetApi="lollipop" />
+        <activity android:name=".ui.activity.search.SearchActivity" />
+
     </application>
 
 </manifest>

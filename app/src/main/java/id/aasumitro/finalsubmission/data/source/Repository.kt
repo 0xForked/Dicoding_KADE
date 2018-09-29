@@ -22,8 +22,6 @@ import java.io.InputStreamReader
 class Repository(private val context: Context? = null,
                  private val apiClient: ApiClient = ApiClient())  {
 
-    // Get league from raw data (json) - folder assets
-    // sebelumnya ini ditolak
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     fun getLeague(): JsonObject? {
         try {
@@ -37,8 +35,6 @@ class Repository(private val context: Context? = null,
         return null
     }
 
-    // Get league from server
-    // selanjutnya ini dicoba untuk final submission submit ke 2
     fun getRemoteLeague():
             Observable<DataResult.LeagueResult>? =
             apiClient.apiServices()?.league()

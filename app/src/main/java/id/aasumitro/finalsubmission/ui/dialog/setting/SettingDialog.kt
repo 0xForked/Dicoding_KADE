@@ -57,7 +57,6 @@ class SettingDialog : Activity() {
         val listLeague = mLeague
         (0 until listLeague.size)
                 .mapTo(listLeagueName) {
-                    Log.d("ADSS", listLeague[it].name)
             listLeague[it].name
         }
 
